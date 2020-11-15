@@ -1,0 +1,373 @@
+/*----------- BASIC SETUP -----------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    background-color: #fff;
+    color: #eaeaea;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+
+/*----------- REUSABLES -----------*/
+
+h1 {
+    color: #ffffff;
+    font-size: 250%;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 250%;
+    font-weight: 400;
+    margin: 5% auto;
+}
+
+h3 {
+    font-size: 180%;
+    font-family: serif;
+    text-align: center;
+}
+
+h4 {
+    color: #219ca8;
+     padding: 2%;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+section {
+    height: 100vh;    /* Adjust this for differenr screen sizes, OKAY !! */
+}
+
+
+
+/*--------------- NAVBAR ---------------*/
+/*--------------- NAVBAR ---------------*/
+/*--------------- NAVBAR ---------------*/
+
+.barr {
+    position: fixed;
+    width: 100%;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    color: #f5f5f5;
+    font-size: 100%;
+    border-radius: 10px;
+    transition: background-color 0.2s;
+    padding: 10%;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+    background-color: #f5f5f5;
+    color: #219ca8;
+}
+
+nav {
+    height: 10vh;
+    background-color: #219ca8;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    margin-left: auto;
+    padding: 1%;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.landing {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing h1 {
+    font-size: 300%;
+    color: #ae5fce;
+}
+
+/*--------------- MEDIA QUERIES ---------------*/
+
+@media screen and ( max-width: 768px ) {
+    
+    .line {
+        background-color: #fff;
+        width: 30px;
+        height: 3px;
+        margin: 5px;
+    }
+    
+    nav {
+        position: relative;
+    }
+    
+    .hamburger {
+        position: absolute;
+        cursor: pointer;
+        left: 3%;
+        top: 50%;
+        transform: translate(-3%, -50%);
+        z-index: 2;
+    }
+    
+    .nav-links {
+        position: fixed;
+        background: #219ca8;
+        height: 100vh;
+        width: 40%;
+        margin-left: auto;
+        flex-direction: column;
+        
+        clip-path: circle(100px at 10% -10%);
+        -webkit-clip-path: circle(100px at 10% -10%);
+        transition: all 1s ease-out;
+    }
+    /*--------------- CLASS FOR JS ---------------*/
+    
+    .nav-links.open {
+        clip-path: circle(1000px at 10% -10%);
+        -webkit-clip-path: circle(1000px at 10% -10%);
+    }
+}
+
+/*--------------- NAVBAR ---------------*/
+/*--------------- NAVBAR ---------------*/
+/*--------------- NAVBAR ---------------*/
+
+
+
+/*----------- HEADER SECTION -----------*/
+
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0.15)), url(https://www.livemorezone.com/wp-content/uploads/xbooks-to-read-in-2020-live-more-zone-dbs.jpg.pagespeed.ic.xQT0vtyd4o.webp);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*----------- INTRODUCTION SECTION -----------*/
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(https://images.squarespace-cdn.com/content/v1/583ed05c59cc68a8c3e45c0f/1482074282081-KQBCRLEWPLWTJKWBCR4X/ke17ZwdGBToddI8pDm48kAznA_0apmJf6xI4vBeoA3lZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpya70s9eHoxDaOzVL_NFzkUD59Ka0RCSZbGJIDFL9wnMqASZuNMiWXCyn-_VLwnmAQ/vision.png?format=750w);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.des {
+    font-size: 130%;
+    text-align: center;
+    padding: 2%;
+}
+
+.heading-3 {
+    margin: 3% auto;
+}
+
+/*----------- QUESTION PAPERS SECTION -----------*/
+
+.papers {
+    background-color: #215ca8;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+}
+
+.dload-link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.download {
+    width: 40%;
+    text-align: center;
+    background-color: #fff;
+    transition: background-color 0.3s;
+}
+
+.download:active,
+.download:hover {
+    background-color: #219ca8;
+}
+
+h4:active,
+h4:hover {
+    color: #fff;
+}
+
+/*----------- FOOTER SECTION -----------*/
+
+footer {
+    height: 40vh;
+    background-color: #48e26c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin: 3%;
+    line-height: 2;
+}
+
+.cont {
+    font-size: 120%;
+    color: #fff;
+}
+
+.mail {
+    text-align: center;
+    transition: color 0.3s;
+    color: #555;
+}
+
+.mail:hover {
+    color: #fff;
+}
+
+.media {
+    width: 100%;
+    background-color: #555;
+    padding: 1%;
+}
+
+.media-ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.media-list {
+    width: 30%;
+    margin: 0;
+    text-align: center;
+}
+
+.media-links {
+    color: #fff;
+    border-radius: 10%;
+    padding: 3%;
+    transition: background-color 0.3s;
+}
+
+.media-links:hover {
+    background-color: #fff;
+    color: #555;
+}
+
+
+/*-------------------------------------*/
+/*----------- MEDIA QUERIES -----------*/
+/*-------------------------------------*/
+
+@media ( max-width: 768px ) {
+    body { font-size: 90%; }
+    .nav-bar { padding: 1.5%; }
+    .intro { 
+        display: flex;
+        justify-content: center;
+    }
+    
+    footer { justify-content: center; }
+    .media { padding: 1.5%; }
+    nav ul li a:link,
+    nav ul li a:visited {
+        font-size: 140%;
+    }
+}
+
+
+@media screen and ( max-width: 600px ) {
+    body { font-size: 80%; }
+    .dload-link {
+        display: flex;
+        flex-direction: column;
+    }
+    .dload-link a {
+        width: 60%;
+    }
+    nav ul li a:link,
+    nav ul li a:visited {
+        font-size: 140%;
+    }
+}
+
+@media screen and ( max-width:480px ) {
+    body { font-size: 60%;
+    text-align: center;}
+    h4 { font-size: 150%; }
+    .dload-link { 
+        display: flex;
+        flex-direction: column;
+    }
+    .dload-link a {
+        font-size: 85%;
+        width: 60%;
+        padding: 0;
+    }
+    .download { 
+        width: 70%;
+        line-height: 3;
+    }
+    
+    footer {
+        font-size: 125%;
+    }
+    .media {
+         font-size: 125%;
+        padding: 2%;
+    }
+    
+    nav ul li a:link,
+    nav ul li a:visited {
+        font-size: 180%;
+    }
+}
+
+@media screen and ( max-width:360px ) {
+    body { text-align: center; }
+    .dload-link a {
+        width: 85%;
+        font-size: 85%;
+    }
+}
+
